@@ -51,4 +51,124 @@ li {
     border: none;
     cursor: pointer;
     padding: 5px;
+} 
+
+
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    /* Center everything vertically + horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    /* prevents it from getting too wide */
+
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    /* spacing between input and button */
+    margin-bottom: 20px;
+}
+
+/* Input field */
+input {
+    flex: 1;
+    /* takes remaining space */
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Add button */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+}
+
+/* Task item */
+li {
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 6px;
+}
+
+/* Delete button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
 }
